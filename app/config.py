@@ -1,7 +1,11 @@
+from instance.config import MOVIE_API_KEY
+
+
 class Config:
     '''
-    General configuration parent clas
+    General configuration parent class
     '''
+    MOVIE_API_BASE_URL = 'https://api.themoviedb.org/3/movie/{}?api_key={}'
     pass
 
 class ProdConfig(Config):
